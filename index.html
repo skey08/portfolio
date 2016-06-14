@@ -3,60 +3,56 @@
 <head>
   <meta charset="UTF-8">
   <title>Samuel Key</title>
-  <link rel="stylesheet" type="text/css" href="style.css">
+  <link rel="stylesheet" type="text/css" href="style.css" />
   <script src="https://code.jquery.com/jquery-3.0.0.js" integrity="sha256-jrPLZ+8vDxt2FnE1zvZXCkCcebI/C8Dt5xyaQBjxQIo=" crossorigin="anonymous"></script>
   <script src="https://code.jquery.com/ui/1.12.0-rc.2/jquery-ui.js" integrity="sha256-6HSLgn6Ao3PKc5ci8rwZfb//5QUu3ge2/Sw9KfLuvr8=" crossorigin="anonymous"></script>
-  <link href="https://fonts.googleapis.com/css?family=Lato:400,900" rel="stylesheet" type="text/css">
-  <link href='https://fonts.googleapis.com/css?family=Fjalla+One' rel='stylesheet' type='text/css'>
-  <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Lato:400,900" rel="stylesheet" type="text/css" />
+  <link href='https://fonts.googleapis.com/css?family=Fjalla+One' rel='stylesheet' type='text/css' />
+  <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet" type="text/css" />
   <script src="scripts.js"></script>
 </head>
 <body>
 
-  <header class="main-header">
+  <header>
     <div class="nav">
-      <a href="#"><i class="fa fa-minus-square-o" aria-hidden="true"></i><span id="menu">Menu</span></a>
+      <div id="menu"><i class="fa fa-minus-square-o menuicon" aria-hidden="true"></i><i class="fa fa-plus-square-o menuicon" aria-hidden="true"></i><span>Menu</span></div>
       <div class="navmenu">
-        <div class="about">About</div>
-        <div class="work">Work</div>
-        <div class="contact">Contact</div>
-        <div class="resume">Resume</div>
+        <div class="home"><a href="index.html">Home</a></div>
+        <div class="about"><a href="#about">About</a></div>
+        <div class="work"><a href="work.html">Work</a></div>
+        <!-- <div class="contact">Contact</div> -->
+        <div class="resume"><a href="https://github.com/skey08/Files/raw/master/SamuelKey_Resume.pdf"><i class="fa fa-cloud-download" aria-hidden="true"></i> Resume</a></div>
       </div>
     </div>
     <div class="nametitle">
       <div class="myname">Samuel Key</div>
       <div class="mytitle">Developer</div>
       <div class="contactlinks">
-        <span><a href="#">Resume</a></span><span><a href="#">Contact</a></span>
+        <span><a href="https://github.com/skey08/Files/raw/master/SamuelKey_Resume.pdf">Resume <i class="fa fa-cloud-download" aria-hidden="true"></i></a></span>
+        <!-- <span><a href="#">Contact</a></span> -->
       </div>
     </div>
     <div class="scrolldown">
-      <a href="#"<i class="fa fa-caret-down" aria-hidden="true"></i></a>
+      <a href="#about"><i class="fa fa-caret-down" aria-hidden="true"></i></a>
     </div>
   </header>
 
-    <section id="projects">
-      <div class="images">
-        <img class="wine" src="wineknow.png">
-        <a href="http://wineknow.herokuapp.com" target="_blank">- wineknow.herokuapp.com -</a>
-        <div class="paragraph">This was my final project for the WDI program at General Assembly.&nbsp;&nbsp;My idea for this project was to allow individual users to create a virtual wine cellar in order to keep an online inventory for the collection.&nbsp;&nbsp;After creating an accout, the user would create their virtual wine cellar by naming it, and adding an image.&nbsp;&nbsp;Then they are able to add and remove bottles as their collection grows.</div>
-        <div class="paragraph">This application helped solidify my understanding of Ruby on Rails after working with it on several other projects.</div>
-        <img class="wifinder" src="wifinder.png">
-        <a href="http://wifinder-app.herokuapp.com" target="_blank">- wifinder-app.herokuapp.com -</a>
-        <div class="paragraph">This was my first time working on a group project for this class.&nbsp;&nbsp;It was also my first time working with a UX designer.&nbsp;&nbsp;Between the four developers we decided to break into a pair on the front-end and a pair working on the back-end.&nbsp;&nbsp;I was on the front-end team and got to collaborate closely with our UX designer, which I found particularly rewarding because I have a great interest in design as well.&nbsp;&nbsp;I also enjoyed having two people working on the front end so that we could pair program.</div>
-        <div class="paragraph">I learned a lot during this project, mainly about working with a group.&nbsp;&nbsp;We used Git to manage our workflow, with everyone being able to push as a collaborator since we were all working in different areas.</div>
-        <img class="goers" src="goers.png">
-        <a href="http://goers-app.herokuapp.com" target="_blank">- goers-app.herokuapp.com -</a>
-        <div class="paragraph">This was my first attempt at a Rails app.&nbsp;&nbsp;I really learned a lot about Rails during this project.&nbsp;&nbsp;From setting the app up from scratch, to MVC.&nbsp;&nbsp;I also learned a lot about time management and planning.</div>
+  <section id="about">
+    <div class="mypic">
+      <img src="linkedin.jpg"></img>
+    </div><div
+     class="myinfo">
+      <p>Hi, I'm Sam.  I am a web developer, excited about what I have learned, and very eager to work and learn, and gain more experience as I grow in my career.  I am currently looking for work with a creative team in NYC or Washington DC.</p>
+      <p>In the past I studied coding in my free time.  When I decided I wanted to get serious about becoming a developer, I decided to attend General Assembly's full-stack Web Development Immersive.  I learned so much in my three months there, I was happy I made the move and career change.</p>
+      <p>I am passionate about web development and design.  I love doing front-end work, exploring the intersection of design and coding.  I thrive off working in a group environment where collaboration is encouraged.  I find that I learn so much from working with other people, and also solidfy my skills.</p>
+      <p>Please feel free to contact me anytime.  I would love to speak with you about any opportunities you might have, and see where my skills take me.</p>
+      <div class="icons-container">
+        <div class="contact-icons"><a href="mailto:s.key08@gmail.com"><i class="fa fa-envelope-o" aria-hidden="true"></i></a></div><div
+        class="contact-icons"><a href="https://www.linkedin.com/in/skkey" target="_blank"><i class="fa fa-linkedin-square" aria-hidden="true"></i></a></div><div
+        class="contact-icons"><a href="https://github.com/skey08/Files/raw/master/SamuelKey_Resume.pdf"><i class="fa fa-file-text-o" aria-hidden="true"></i></a></div>
       </div>
-    </section>
-
-    <section id="about">
-      <img class="me" src="linkedin.jpg"></img>
-      <div class="myinfo">
-        <div class="aboutname">SAMUEL KENNETH KEY</div>
-      </div>
-    </section>
+    </div>
+  </section>
 
 </body>
 </html>
