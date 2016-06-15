@@ -26,16 +26,20 @@ $(document).ready(function() {
     $('.fa-plus-square-o.menuicon').toggle();
   })
 
-  $('.images img').click(function() {
+  $('.images img, .viewmore').click(function() {
     $('.overlay').show()
     $('.appx').show()
     $(this).siblings('.appinfo').show()
+    $('.project').css('position', 'inherit')
+    $('.viewmore').hide()
   })
 
   $('.overlay, .appx').click(function() {
     $(this).hide()
     $('.overlay').hide()
     $('.appinfo').hide()
+    $('.project').css('position', 'relative')
+    $('.viewmore').show()
   })
 
 
