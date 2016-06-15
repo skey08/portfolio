@@ -24,7 +24,7 @@ a:visited {
 }
 
 a:hover {
-  color: #dcdcdc;
+  color: rgba(254, 153, 0, 1);
   text-decoration: none;
 }
 
@@ -42,6 +42,7 @@ header {
 }
 
 .nav {
+  line-height: 1.5;
   font-family: 'Fjalla One', sans-serif;
   display: block;
   background: rgba(255,255,255,.8);
@@ -54,6 +55,10 @@ header {
 
 #menu {
   cursor: pointer;
+}
+
+#menu span:hover {
+  color: rgba(254, 153, 0, .4);
 }
 
 .nametitle a:link,
@@ -119,7 +124,7 @@ header {
 .scrolldown {
   position: absolute;
   bottom: 50px;
-  left: 49%;
+  left: 49.5%;
   font-size: 2em;
   animation: arrowbounce 2s infinite;
 }
