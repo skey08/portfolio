@@ -210,7 +210,6 @@ header {
   width: 100%;
   height: auto;
   padding: 5%;
-  margin: 5%;
   background: #fff;
 }
 
@@ -231,6 +230,7 @@ header {
     width: 90%;
     padding: 5%;
     display: block;
+    margin: 0 auto;
   }
 
   #about {
@@ -250,5 +250,9 @@ header {
     width: 100%;
     vertical-align: top;
     padding: 0 5%;
+  }
+
+  .appinfo {
+    width: 90%;
   }
 }
