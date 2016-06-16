@@ -44,6 +44,7 @@ header {
 .nav {
   line-height: 1.5;
   font-family: 'Fjalla One', sans-serif;
+  font-size: 1.3em;
   display: block;
   background: rgba(255,255,255,.8);
   padding: 5px;
@@ -236,6 +237,7 @@ header {
 }
 
 .viewmore {
+  display:none;
   position: absolute;
   top: 0;
   right: 0;
