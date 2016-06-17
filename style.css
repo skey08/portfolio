@@ -34,6 +34,7 @@ header {
   display: table;
   background: url('skyline.jpg');
   opacity: .9;
+  filter: alpha(opacity=90);
   background-repeat: no-repeat;
   background-position: center center;
   position: relative;
@@ -128,7 +129,8 @@ header {
   bottom: 50px;
   left: 49.5%;
   font-size: 2em;
-  animation: arrowbounce 2s infinite;
+  -webkit-animation: arrowbounce 2s infinite;
+          animation: arrowbounce 2s infinite;
 }
 
 .scrolldown i {
@@ -136,9 +138,9 @@ header {
 }
 
 @-webkit-keyframes arrowbounce {
-  0%   {transform: translateY(0px);}
-  50%  {transform: translateY(15px);}
-  100% {transform: translateY(0px);}
+  0%   {-webkit-transform: translateY(0px);transform: translateY(0px);}
+  50%  {-webkit-transform: translateY(15px);transform: translateY(15px);}
+  100% {-webkit-transform: translateY(0px);transform: translateY(0px);}
 }
 
 #about {
@@ -211,7 +213,9 @@ header {
   position: absolute;
   top: 30%;
   left: 50%;
-  transform: translateX(-50%);
+  -webkit-transform: translateX(-50%);
+      -ms-transform: translateX(-50%);
+          transform: translateX(-50%);
   z-index: 999;
   max-width: 700px;
   width: 100%;
@@ -237,7 +241,6 @@ header {
 }
 
 .viewmore {
-  display:none;
   position: absolute;
   top: 0;
   right: 0;
@@ -246,9 +249,12 @@ header {
 }
 
 .viewmore i {
-  color: #fff;
+  color: #dcdcdc;
   z-index: -1;
 }
+
+.grow { -webkit-transition: all .2s ease-in-out; transition: all .2s ease-in-out; }
+.grow:hover { -webkit-transform: scale(1.05); -ms-transform: scale(1.05); transform: scale(1.05); }
 
 @media all and (max-width: 698px) {
   .images > div {

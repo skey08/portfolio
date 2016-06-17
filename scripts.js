@@ -38,8 +38,4 @@ $(document).ready(function() {
     $('.project').css('position', 'relative')
   })
 
-  $('.images img').hover(function() {
-    $(this).siblings('.viewmore').toggle()
-  })
-
 })
