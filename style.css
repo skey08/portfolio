@@ -253,9 +253,6 @@ header {
   z-index: -1;
 }
 
-.grow { -webkit-transition: all .2s ease-in-out; transition: all .2s ease-in-out; }
-.grow:hover { -webkit-transform: scale(1.05); -ms-transform: scale(1.05); transform: scale(1.05); }
-
 @media all and (max-width: 698px) {
   .images > div {
     width: 90%;
