@@ -38,4 +38,12 @@ $(document).ready(function() {
     $('.project').css('position', 'relative')
   })
 
+  $('.images img').mouseenter(function () {
+    $(this).siblings('.viewmore').css('font-size','1.5em')
+  })
+
+  $('.images img').mouseout(function () {
+    $(this).siblings('.viewmore').css('font-size','1em')
+  })
+
 })
