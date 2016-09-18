@@ -15,13 +15,9 @@ $(document).ready(function() {
     });
   });
 
+  $('nav ul').hide()
   $('#menu').click(function(){
-    $('.home').toggle('slide', {direction : 'right'}, 300);
-    $('.about').toggle('slide', {direction : 'right'}, 500);
-    $('.work').toggle('slide', {direction : 'right'}, 700);
-    $('.contact').toggle('slide', {direction : 'right'}, 900);
-    $('.resume').toggle('slide', {direction : 'right'}, 1100);
-    $('.fa-minus-square-o.menuicon, .fa-plus-square-o.menuicon').toggle();
+    $('ul').toggle('slide', {direction : 'right'}, 500);
   })
 
   $('.images img, .viewmore').click(function() {

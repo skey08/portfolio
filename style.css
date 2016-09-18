@@ -28,7 +28,7 @@ a:hover {
   text-decoration: none;
 }
 
-header {
+body.home header {
   background-color: #000;
   font-family: 'Fjalla One', sans-serif;
   display: table;
@@ -42,10 +42,10 @@ header {
   height: 100vh;
 }
 
-.nav {
+nav {
   line-height: 1.5;
   font-family: 'Fjalla One', sans-serif;
-  font-size: 1.3em;
+  font-size: 1.1em;
   display: block;
   background: rgba(255,255,255,.8);
   padding: 5px;
@@ -54,6 +54,10 @@ header {
   position: fixed;
   right: 0%;
   z-index: 999;
+}
+
+nav ul {
+  list-style: none;
 }
 
 #menu {
@@ -73,10 +77,6 @@ header {
 .nav span,
 .nav i.fa {
   color: #000;
-}
-
-.navmenu div {
-  display: none;
 }
 
 .menuicon {
@@ -173,6 +173,14 @@ header {
 .contact-icons {
   padding: 5%;
   font-size: 4em;
+}
+
+.contact-icons.linkedin i:hover {
+  color: #0077B5;
+}
+
+.contact-icons.twitter i:hover {
+  color: #00aced;
 }
 
 .icons-container {
