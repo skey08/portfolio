@@ -17,7 +17,7 @@ $(document).ready(function() {
 
   $('nav ul').hide()
   $('#menu').click(function(){
-    $('ul').toggle('slide', {direction : 'right'}, 500);
+    $('ul').toggle('slide', {direction : 'up'}, 500);
   })
 
   $('.images img, .viewmore').click(function() {
